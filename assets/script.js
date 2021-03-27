@@ -5,7 +5,15 @@ var currentHour = moment();
 $("#currentHour").text(today.format("LT"));
 	
 
-
+var saveBtn1 = document.getElementById("saveBtn1");
+var saveBtn2 = document.getElementById("saveBtn2");
+var saveBtn3 = document.getElementById("saveBtn3");
+var saveBtn4 = document.getElementById("saveBtn4");
+var saveBtn5 = document.getElementById("saveBtn5");
+var saveBtn6 = document.getElementById("saveBtn6");
+var saveBtn7 = document.getElementById("saveBtn7");
+var saveBtn8 = document.getElementById("saveBtn8");
+var saveBtn9 = document.getElementById("saveBtn9");
 
 // JAVASCRIPT VARIABLES --------------------------------------------------
 
@@ -24,9 +32,9 @@ $("#currentHour").text(today.format("LT"));
    
 
 
-
-
 // FUNCTION DEFINITIONS --------------------------------------------------
+
+
 
 function updateRow1() {
   var hr = (new Date()).getHours()
@@ -128,15 +136,82 @@ function updateRow9() {
 };
 
 
+function init() {
+  
+  $('#input1').val(localStorage.getItem("item1"));
+  $('#input2').val(localStorage.getItem("item2"));
+  $('#input3').val(localStorage.getItem("item3"));
+  $('#input4').val(localStorage.getItem("item4"));
+  $('#input5').val(localStorage.getItem("item5"));
+  $('#input6').val(localStorage.getItem("item6"));
+  $('#input7').val(localStorage.getItem("item7"));
+  $('#input8').val(localStorage.getItem("item8"));
+  $('#input9').val(localStorage.getItem("item9"));
+  
+};
+
+
 
 
 
 // EVENT LISTENERS --------------------------------------------------------
+saveBtn1.addEventListener("click", function() {
+  
+  localStorage.setItem("item1", $("#input1").val());
 
+});
 
+saveBtn2.addEventListener("click", function() {
+  
+  localStorage.setItem("item2", $("#input2").val());
 
+});
+
+saveBtn3.addEventListener("click", function() {
+  
+  localStorage.setItem("item3", $("#input3").val());
+
+});
+
+saveBtn4.addEventListener("click", function() {
+  
+  localStorage.setItem("item4", $("#input4").val());
+
+});
+
+saveBtn5.addEventListener("click", function() {
+  
+  localStorage.setItem("item5", $("#input5").val());
+
+});
+
+saveBtn6.addEventListener("click", function() {
+  
+  localStorage.setItem("item6", $("#input6").val());
+
+});
+
+saveBtn7.addEventListener("click", function() {
+  
+  localStorage.setItem("item7", $("#input7").val());
+
+});
+
+saveBtn8.addEventListener("click", function() {
+  
+  localStorage.setItem("item8", $("#input8").val());
+
+});
+
+saveBtn9.addEventListener("click", function() {
+  
+  localStorage.setItem("item9", $("#input9").val());
+
+});
 
 // FUNCTION CALLS ---------------------------------------------------------
+
+init();
 
 setInterval(updateRow1, 1000 * 60);
 updateRow1();
