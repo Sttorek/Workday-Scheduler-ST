@@ -7,4 +7,5 @@ For this app I've created a daily workday schedule. I used local storage so that
 Site- https://sttorek.github.io/Workday-Scheduler-ST/
 
 
+![Screenshot](./assets/images/Screenshot.png)
 
