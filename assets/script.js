@@ -17,15 +17,15 @@ var saveBtn9 = document.getElementById("saveBtn9");
 
 // JAVASCRIPT VARIABLES --------------------------------------------------
 
-  var time1 = 8;
-  var time2 = 9;
-  var time3 = 10;
-  var time4 = 11;
-  var time5 = 12;
-  var time6 = 13;
-  var time7 = 14;
-  var time8 = 15;
-  var time9 = 16;
+  var time1 = 9;
+  var time2 = 10;
+  var time3 = 11;
+  var time4 = 12;
+  var time5 = 13;
+  var time6 = 14;
+  var time7 = 15;
+  var time8 = 16;
+  var time9 = 17;
 
 
 
